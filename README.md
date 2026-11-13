@@ -106,7 +106,7 @@ index="t1110-003" "An account was successfully logged on." "192.168.1.60"
 
 This returned 8 successful logon events. Three of them were for `Administrator` / `administrator` (the same account name with different capitalization), while the other five were different usernames. That gave me 6 unique accounts with successful logon events from this IP.
 
-It's worth distinguishingeight events from six accounts. Also, a successful logon doesn't automatically prove that the account was maliciously compromised; the attribution comes from the broader attack context. For this lab, those were the successful accounts I identified from the suspicious source.
+It's worth distinguishing eight events from six accounts. Also, a successful logon doesn't automatically prove that the account was maliciously compromised; the attribution comes from the broader attack context. For this lab, those were the successful accounts I identified from the suspicious source.
 
 ## Q5 — Interpret the failed-logon Sub Status
 
