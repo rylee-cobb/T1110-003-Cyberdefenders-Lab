@@ -196,8 +196,6 @@ One thing I kept thinking about after finishing the lab was how much I relied on
 
 If I were looking for a similar attack in a real environment, I'd want to widen the search and look for suspicious authentication patterns across accounts, IP addresses, and time, instead of relying only on one indicator. I didn't test that scenario in this lab, but it's something I want to keep in mind as I continue learning.
 
-Also, the repeated failed logons and affected usernames fit the lab's password spraying scenario, but the Windows events don't show the passwords the attacker actually tried. I can describe the observed pattern without claiming I independently proved that the same password was reused across every account.
-
 ## References
 
 - [CyberDefenders T1110-003 lab](https://cyberdefenders.org/blueteam-ctf-challenges/t1110003/)
