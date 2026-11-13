@@ -30,7 +30,7 @@ I expanded that search to look for successful logins specifically. I asked my AI
 index="t1110-003" "An account was successfully logged on."
 ```
 
-This narrowed the results to 1,800 events. Splunk displayed the newest events first, so I examined the first result, timestamped August 1, 2022, at 4:48:45.254 PM. Under **New Logon**, the account name was `Administrator` and the domain was `CYBERDEFENDERS`. It's important to use the *New Logon* account here, not assume the *Subject* account is the user who signed in.
+This narrowed the results to 1,800 events. Splunk displayed the newest events first, so I examined the first result, timestamped August 1, 2022, at 4:48:45.254 PM. Under New Logon, the account name was `Administrator` and the domain was `CYBERDEFENDERS`. It's important to use the *New Logon* account here, not assume the *Subject* account is the user who signed in.
 
 ![New Logon details for the Administrator account](./images/image03.png)
 
