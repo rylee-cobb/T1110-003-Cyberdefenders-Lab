@@ -6,7 +6,9 @@
 
 ## Scenario and approach
 
-I specifically chose this T1110-003 CyberDefenders lab as my second lab to document because it involves Splunk and password spraying. I started by expanding the scenario, but found that it didn't do much to set me up for the lab itself. The description is very similar to the MITRE ATT&CK write-up for T1110.003. With that being said, I had a good idea of what I was up against. I was excited to get some hands-on time in a Splunk lab environment!
+I specifically chose this T1110-003 CyberDefenders lab as my second lab to document because it involves Splunk and password spraying. I was excited to get some hands-on time in a Splunk lab environment! 
+
+I started by expanding the scenario, but found that it didn't do much to set me up for the lab itself. The description is essentially the MITRE ATT&CK write-up for T1110.003. With that being said, I had a good idea of what I was up against:
 
 ![CyberDefenders lab scenario](./images/scenario.png)
 
