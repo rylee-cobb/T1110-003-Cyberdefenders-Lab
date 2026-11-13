@@ -20,7 +20,7 @@ The lab uses Windows authentication and Remote Desktop Services events. My goal 
 
 The first question asks who the last logged-on user was. I figured this should be pretty straightforward to identify.
 
-Immediately upon opening Splunk, the search bar was already populated with `index="t1110-003"`. This was most likely configured by CyberDefenders for the purposes of the lab. An **index** is where Splunk stores searchable events, and this search returned 24,214 events. Wow.
+Immediately upon opening Splunk, the search bar was already populated with `index="t1110-003"`. This was most likely configured by CyberDefenders for the purposes of the lab. An index is where Splunk stores searchable events, and this search returned 24,214 events. Wow.
 
 ![Splunk search over the provided index](./images/image02.png)
 
@@ -128,7 +128,7 @@ This question appeared to be asking for the time between the first and last fail
 index="t1110-003" "192.168.1.60" "An account failed to log on."
 ```
 
-There were thousands of matching events. A related search where I included **both** successful and failed logons returned 4,310 results; I originally mixed that count up with the failed-only search. I manually scrolled to page 50 and found an event at 4:33:37.226 PM that I mistakenly thought was the oldest. When I compared it with the last failed logon at 4:34:57.623 PM, I calculated 01:20. I entered it into Question 6, but it was wrong.
+There were thousands of matching events. A related search where I included both successful and failed logons returned 4,310 results; I originally mixed that count up with the failed-only search. I manually scrolled to page 50 and found an event at 4:33:37.226 PM that I mistakenly thought was the oldest. When I compared it with the last failed logon at 4:34:57.623 PM, I calculated 01:20. I entered it into Question 6, but it was wrong.
 
 I went back and consulted my AI assistant. It initially suggested that the Splunk Events view might have limited how far back I could scroll. That was a possible explanation, but I hadn't proven it. I also discovered that in one sorting attempt I'd used `time` instead of Splunk's actual timestamp field, **`_time`**. One missing underscore changes what the command does!
 
