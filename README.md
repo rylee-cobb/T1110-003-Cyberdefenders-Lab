@@ -18,7 +18,7 @@ The lab uses Windows authentication and Remote Desktop Services events. My goal 
 
 The first question asks who the last logged-on user was. I figured this should be pretty straightforward to identify.
 
-Immediately upon opening Splunk, the search bar was already populated with `index="t1110-003"`. This was most likely configured by CyberDefenders for the purposes of the lab. An **index** is where Splunk stores searchable events, and this search returned **24,214 events**. Wow.
+Immediately upon opening Splunk, the search bar was already populated with `index="t1110-003"`. This was most likely configured by CyberDefenders for the purposes of the lab. An **index** is where Splunk stores searchable events, and this search returned 24,214 events. Wow.
 
 ![Splunk search over the provided index](./images/image02.png)
 
